@@ -1,0 +1,141 @@
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-size: 13px;
+}
+
+h1, h2, h3, h4, h5, h6, a{
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+p{
+	font-weight: 400;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	width: 1172px;
+	margin: 0 auto;
+}
+
+/* Header */
+
+header{
+	background: url(../img/bg.jpg) no-repeat center top;
+	padding-bottom: 319px;
+}
+
+.logo{
+	margin-top: 47px;
+}
+
+.offer{
+	margin-top: 250px;
+}
+
+.offer__title{
+	font-size: 37px;
+	margin-bottom: 15px;
+}
+
+/* Section 2 */
+
+.title{
+	font-size: 23px;
+	margin-top: 120px;
+}
+
+.skills{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+
+.block{
+	width: 339px;
+	background: url(../img/icon1.jpg) no-repeat left top;
+	padding-left: 75px;
+}
+
+.block:nth-child(2){
+	background: url(../img/icon2.jpg) no-repeat left top;
+}
+
+.block:nth-child(3){
+	background: url(../img/icon3.jpg) no-repeat left top;
+}
+
+.block__title{
+	margin-bottom: 10px;
+}
+
+/* Section 3 */
+
+.photos{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 95px;
+	margin-bottom: 90px;
+}
+
+.btn{
+	display: block;
+	width: 235px;
+	background: #ecac2e;
+	padding: 17px 30px;
+	color: #000;
+	text-decoration: none;
+	border-radius: 2px;
+	margin-bottom: 100px;
+}
+
+/* Footer */
+
+footer{
+	background: #000;
+	padding: 50px 0;
+}
+
+.footer{
+	display: flex;
+}
+
+.footer__text{
+	margin-right: 75px;
+	color: #fffffa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
