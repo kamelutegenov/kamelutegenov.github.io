@@ -1,285 +1,303 @@
-@charset "UTF-8";
-/* CSS Document */
-
-body {
-
-    margin: 0;
-    padding: 0;
-    color: #000;
-    background: #000;
-}
-ul, ol, dl { 
-    padding: 0;
-    margin: 0;
-}
-a {
-    text-decoration: none;
-}
-a img { 
-    border: none;
-    text-decoration: none;
-}
-a:link {
-    color: #42413C;
-    text-decoration: underline; 
-}
-a:visited {
-    color: inherit;
-    text-decoration: none;
-}
-a:hover, a:active, a:focus { 
-    text-decoration: none;
-}
-header, section, footer, aside, nav, article, figure {
-
-}
-ol, ul {
-    list-style: none;
-}
-/*.row{
-         margin-right: 15px; 
-     margin-left: 15px; 
-     }*/
-     .non_padding{
-        margin-right:-15px;
-        margin-left:-15px;
-    }
-    /*1 экран*/
-    .header {
-        /*position: fixed;*/
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 30;
-        background-color: #fff;
-    }
-    .header__top {
-        position: relative;
-        z-index: 5;
-        overflow: hidden;
-        height: 4.0em;
-        transform: translateZ(0);
-        transition: height .4s cubic-bezier(.175,.885,.32,1.275),padding .4s cubic-bezier(.175,.885,.32,1.275);
-        padding-top: 0;
-        will-change: height,padding;
-    }
-
-    .header__top>.container {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .header__top, .header__top>.container {
-        height: 100px;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    .col-7, .w-7 {
-        width: 38.8889%;
-    }
-    .top-menu__item {
-        margin-right: 1.66665em;
-        position: relative;
-        float: left;
-    }
-    .top-menu__item a{
-        text-decoration: none;
-        font-size:16px;
-        color: #000000;
-        padding-bottom:4px;
-    }
-
-    .menu_header li { 
-        margin-right: 20px;
-        font-family: "Book Antiqua";
-        list-style-type: none;
-    }
-
-    .header__logo {
-        display: inline-block;
-        vertical-align: top;
-        width: 9.7222em;
-        position: relative;
-        top: .5em;
-    }
-    .col-4 {
-        width: 22.2222%;
-    }
-
-    .menu_header {
-        padding-top:40px;
-    }
-    .logo{
-        padding-top:15px;
-    }
-  
-.icon__clock p{
-    padding: 1em;
-    font-family: "Book Antiqua";
-    font-size: 16px;
-    letter-spacing: 0.72px;
-}
-.icon__clock a{
-    text-decoration: none;
-}
-.icon__clock a:hover{
-    color:#A61F39;  
-    transition: 1s; 
-}
-.icon__clock :not(:hover) {
-  transition: 1s;
-}
-.basket{
-    padding-top:5px;
-    width: 200px;
-}
-.fs-13{
-    margin-left: 5px;
-    padding-top: 5px;
-}
-.fs-13 a{
-    text-decoration: none;
-}
-.otsut{
-    margin-left: 2em;
-}
-.top-info__tel {
-    padding-top:10px;
-    padding-left: 10px;
-    position: relative;
-    font-size: 1em;
-    line-height: 1.2;
-}
-.top-info__tel a{
-    text-decoration: none;
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
 }
 
-.fr {
-    float: left;
-}
-.header__top-basket{
-    margin-left:1em;
+*{
+	box-sizing: border-box;
+	-moz-transition: all 0.3s ease;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease;
 }
 
-.header__bottom{
-    box-shadow: 0 6px 12px 0 rgba(0,0,0,.1);
-    position: relative;
-    z-index: 4;
-    border-top: 1px solid #e6e5e1;
-    padding: 5px 5px 5px 5px;
+ul, li{
+	display: block;
+	margin: 0;
+	padding: 0;
 }
-.bottom-menu li{
-    font-family: "Book Antiqua";
-    font-size: 18px;
-    margin: auto;
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
 }
-.bottom-menu a{
- text-decoration: none;
+
+a:hover{
+	text-decoration: none;
 }
-.header__bottom-search a{
-    font-family: "Book Antiqua";
-    text-decoration: none;
-    font-size: 20px;
-    color: #6d1f39;
+
+.container{
+	margin: 0 auto;
+}
+
+hr{
+	opacity: 0.2;
+}
+
+/* HEADER */
+
+.header{
+	box-shadow: 0 6px 12px 0 rgba(0,0,0,.1);
+	padding-bottom: 10px;
+	margin-bottom: 100px;
+}
+
+.block{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 24px;
+}
+
+.menu{
+	display: flex;
+}
+
+.menu__item{
+}
+
+.menu__item_mr{
+	margin-right: 30px;
+}
+
+.menu__item a{
+	color: #000;
+	text-decoration: none;
+}
+
+.menu__item a:hover{
+	color: #6d1f39;
+}
+
+.logo{
+	width: 197px;
+	height: 71px;
+	margin-left: -50px;
+}
+
+.case{
+	margin-left: -35px;
 }
 
 
 
-/*footer*/
-footer{
-    margin-top: 100px;
-    padding-bottom: 100px;
-    background-color:#333230;
+.login{
+	display: flex;
+	align-items: center;
+	margin-left: -40px;
 }
-#fot-icon{
-    margin-top:20px;
+
+ .login__icn1{
+	width: 25px;
+	height: 28px;
+	margin-right: 10px;
+}
+
+.login__sign1{
+	margin-right: 15px;
+}
+
+.login__icn2{
+	width: 26px;
+	height: 28px;
+	margin-right: 10px;
+}
+
+.products{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.products__item{
 
 }
 
-.footer__content{
-    padding-top: 60px;
+.products__item a{
+	color: #000;
+	text-decoration: none;
+	font-size: 18px;
 }
-.footer__content p{
-    text-align: center;
+
+.products__item a:hover{
+	color: #000;
+	text-decoration: none;
+	color: #6d1f39;
+}
+
+.products__img{
+	
+}
+
+.case__text a{
+	color: #000;
+}
+
+.case__text a:hover{
+	color: #000;
+	color: #6d1f39;
+}
+
+.login__sign1{
+	color: #000;
+}
+
+.login__sign2{
+	color: #000;
+}
+
+.login__sign1:hover{
+	color: #6d1f39;
+}
+
+.login__sign2:hover{
+	color: #6d1f39;
+}
+
+
+
+
+/* FOOTER */
+
+
+.footer{
+	background: #333230;
+	color: #fff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.plot{
+
+}
+
+.ftr-start{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.plot__title{
+	font-size: 25px;
+	text-align: center;
+}
+
+.sub-block a{
+	text-decoration: none;
     color: #ffffff;
-    font-family: "Book Antiqua";
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 34px;
-    letter-spacing: 0.5px;
-}
-.qwertyuio{
-   margin-left: 15%;
-   width: 250px;
-   border: 1px solid #000000;
-   background-color: #6d1f39;
-}
-.qwertyuio1{
-   margin-left: 7%;
-   width: 300px;
-   border: 1px solid #000000;
-   background-color: #6d1f39;
-}
-.footer__text{
-    padding-top: 1em;
-}
-.footer__text a{
-
-    text-decoration: none;
-    color: #ffffff;
-    font-family: "Book Antiqua";
     font-size: 18px;
     line-height: 30px;
-    letter-spacing:1px;
-}
-.footer__text__2{
-  padding-top: 1em;  
-  text-align: center;
-}
-.footer__text__2 a{
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    font-family: "Book Antiqua";
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing:1px;
-}
-.footer__End{
-    height: auto;
-    background: #000;
-}
-.footer__End__img{
-    padding-top:30px;
-    padding-bottom:30px;
-}
-.footer__End__img img{
-    display:block;
-    margin:auto;
+    letter-spacing: 1px;
 }
 
-.last1{
-    width: 85px !important;
-    height: 49px !important;
+.sub-block_1{
+	
 }
 
-.last2{
-    width: 117px !important;
-    height: 33px !important;
+.sub-block_2{
+	
 }
 
-.last3{
-    width: 113px !important;
-    height: 35px !important;
+.sub-block_center{
+	text-align: center;
 }
 
-.bg-footer{
-    background: #000;
+
+
+.place{
+	display: flex;
+	justify-content: space-between;
 }
 
-.container-fluid{
-    background: #000;
+.line{
+	width: 282px;
+	height: 2px;
+	background: #000;
+	margin-bottom: 26px;
+}
+
+.line2{
+	height: 152px;
+	width: 1px;
+	background: #000;
+	align-self: center;
+	margin-top: 40px;
+}
+
+.logo2{
+	margin-top: 20px;
+}
+
+
+.footer-end{
+	background: #000;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 50px 0;
+}
+
+.card1{
+	width: 85px;
+	height: 49px;
+}
+
+.card2{
+	width: 117px;
+	height: 33px;
+}
+
+.card3{
+	width: 113px;
+	height: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 
