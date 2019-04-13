@@ -49,7 +49,11 @@ ol, ul {
 }
 .services{
     padding-top: 100px;
-    padding-bottom: 163px;
+    padding-bottom: 100px;
+}
+
+.uslugi{
+    padding-top: 300px;
 }
 /*1 экран*/
 .header {
@@ -342,7 +346,7 @@ top:105em;
     right: 15px;
 position: absolute;
 width: 45%;
-height: 1500px;
+height: 1283px;
 background-color: #ffcc00;
 }
 .Assortment__text{
