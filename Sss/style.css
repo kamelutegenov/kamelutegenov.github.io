@@ -32,6 +32,10 @@ a:focus {
     outline: none;
 }
 
+a:link{
+	text-decoration: none;
+}
+
 a:hover{
 	text-decoration: none;
 }
@@ -328,10 +332,6 @@ a:hover{
 .ftr-start{
 	display: flex;
 	justify-content: space-between;
-}
-
-.tar{
-	margin-left: 100px;
 }
 
 .plot__title{

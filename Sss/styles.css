@@ -47,6 +47,10 @@ ol, ul {
     margin-right:-15px;
     margin-left:-15px;
 }
+
+.row{
+    flex-wrap: nowrap;
+}
 .services{
     padding-top: 100px;
     padding-bottom: 100px;
@@ -225,25 +229,37 @@ ol, ul {
 
 /*slider*/
 .text__slider{
- font-family: Book;
- float:right;    
+ font-family: Book;   
  font-size:25px; 
- margin-top:3em;
- margin-right:2em;
 
 }
 
 .hova{
     margin-top:7em;    
     background: url(images/sfff.png) no-repeat center top;  
-    height:600px
+    height:600px;
+    display: flex;
+    justify-content: space-around;
 }
 
 #zag1{
     font-weight: bolder;    
     font-size:45px; 
     text-transform:uppercase;
+}
 
+.cena{
+    display: flex;
+    align-items: center;
+}
+
+.product-card__price{
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.tar{
+    text-align:none;
 }
 
 #text1{
@@ -273,9 +289,7 @@ ol, ul {
 }
 
 #pic1{
-    float:left; 
-    margin-top:80px;
-    margin-left:125px;   
+    
 }
 /*tiggeri*/
 .fon1{
@@ -345,7 +359,7 @@ top:105em;
 .fon__geluy{
     right: 15px;
 position: absolute;
-width: 45%;
+width: 35%;
 height: 1283px;
 background-color: #ffcc00;
 }
@@ -472,6 +486,7 @@ span a{
     line-height: 25.2px;
     text-transform: uppercase;
     letter-spacing: 1.54px;
+    z-index: 5;
 }
 
 .fon{
