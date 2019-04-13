@@ -26,6 +26,12 @@ button:focus {
     outline: none;
 }
 
+a, 
+a:active, 
+a:focus {
+    outline: none;
+}
+
 a:hover{
 	text-decoration: none;
 }
@@ -127,7 +133,7 @@ a:hover{
 		.header__bar-top-tools{
 			position: absolute;
 			height: 100px;
-			right: 30px;
+			right: -38px;
 			display: flex;
 			align-items: center;
 		}
@@ -163,7 +169,7 @@ a:hover{
 			.basket{
 	  opacity: 0.5;
     margin-right: -30px;
-    margin-left: 10px;
+        margin-left: -26.5px;
 				border-right: 1px solid #f1f0f0;
 			}
 		
@@ -322,7 +328,10 @@ a:hover{
 .ftr-start{
 	display: flex;
 	justify-content: space-between;
+}
 
+.tar{
+	margin-left: 100px;
 }
 
 .plot__title{
