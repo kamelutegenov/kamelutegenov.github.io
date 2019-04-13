@@ -51,14 +51,20 @@ ol, ul {
 .row{
     flex-wrap: nowrap;
 }
+
+.wrap{
+    flex-wrap: wrap;
+}
 .services{
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
 .uslugi{
-    padding-top: 300px;
+    padding-top: 350px;
 }
+
+
 /*1 экран*/
 .header {
     /*position: fixed;*/
@@ -235,6 +241,7 @@ ol, ul {
 .text__slider{
  font-family: Book;   
  font-size:25px; 
+ margin-left: 100px;
 
 }
 
@@ -243,7 +250,8 @@ ol, ul {
     background: url(images/sfff.png) no-repeat center top;  
     height:600px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    
 }
 
 #zag1{
@@ -295,7 +303,7 @@ ol, ul {
 }
 
 #pic1{
-    
+    margin-right: 100px;
 }
 /*tiggeri*/
 .fon1{
@@ -366,8 +374,12 @@ top:105em;
     right: 15px;
 position: absolute;
 width: 45%;
-height: 1283px;
+height: 1780px;
 background-color: #ffcc00;
+}
+
+.mb{
+    padding-top: 70px;
 }
 .Assortment__text{
     text-align: center;
