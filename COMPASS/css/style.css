@@ -86,6 +86,11 @@ button, button:hover, button:focus{
 	border: none;
 }
 
+.iicon{
+	background: transparent;
+	border: none;
+}
+
 .head{
 	background: rgba(0, 0, 0, 0.50);
 	height: 75px;
